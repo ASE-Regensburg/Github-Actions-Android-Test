@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 TextView textView = (TextView) findViewById(R.id.secret_text_view);
-                textView.setText("Yes they are!");
+                textView.setText("Yes they are! Or are they?");
             }
         });
     }
