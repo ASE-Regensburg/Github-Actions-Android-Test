@@ -59,6 +59,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./MensaApp.apk
+          asset_path: /home/runner/work/Github-Actions-Android-Test/Github-Actions-Android-Test/MensaApp.apk
           asset_name: MensaApp.apk
           asset_content_type: application/zip
