@@ -2,8 +2,8 @@ name: Minimal Android CI Workflow
 
 on:
   push:
-    tags:        
-      - v*.*
+    branches:
+      - master
 
 jobs:
   test:
@@ -38,6 +38,7 @@ jobs:
   release:
     name: Release APK
     needs: apk
+    if: startsWith(github.event.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
       - name: Download APK from build
