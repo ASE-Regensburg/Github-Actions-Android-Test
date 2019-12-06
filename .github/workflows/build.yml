@@ -1,9 +1,6 @@
 name: Minimal Android CI Workflow
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   test:
